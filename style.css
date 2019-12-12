@@ -1,0 +1,277 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 500vh;
+
+
+}
+
+.wrapper {
+    /* max-width: 1401px; */
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+
+.logo img {
+    position: absolute;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0 10vw;
+
+}
+
+.logo-still-nav img {
+    height: 120px;
+    margin-top: -30px;
+}
+
+.bar-pannel {
+    position: absolute;
+    top: 20px;
+    padding: 10px 0;
+
+    background-color: none;
+    width: 100%;
+    transition: 0.3s top;
+    /* background-color: red; */
+}
+
+div.nav-moving {
+    background-color: black;
+    top: -80px;
+    z-index: 100;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
+
+.nav-list ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    margin-right: 10vw;
+}
+
+.nav-list li {
+    float: left;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    opacity: 0.7;
+    font-size: 20px
+}
+
+.nav-list li:hover a {
+    opacity: 1;
+}
+
+
+
+.nav-bar {
+    position: relative;
+
+
+    background-color: rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
+    background-image: url("images/PizzeriaRoberto_BG.jpg");
+    height: 80vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+.center-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.center-information h2 {
+    font-size: 40px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+
+.center-information button {
+    border: solid whitesmoke 1px;
+    color: whitesmoke;
+    font-size: 20px;
+    background: none;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.center-information button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+.center-information .button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* @media(min-width: 1400px) {
+    .wrapper {
+        max-width: 1401px;
+        margin: auto;
+    }
+
+    .nav-bar {
+        width: 100vw;
+    }
+} */
+
+
+
+/* the main part of the page */
+
+
+
+section.pizzeria {
+    margin: 100px 5vw;
+    /* position: relative; */
+    height: 400px;
+    background-color: red;
+}
+
+.text-section-pizzeria {
+    width: 60%;
+    background-color: yellow;
+    float: left;
+}
+
+.text-section-pizzeria h2 {
+    font-size: 40px;
+}
+
+.text-section-pizzeria p {
+    font-size: 25px;
+}
+
+
+.img-section-pizzeria img {
+    width: 35%;
+    /* position: absolute; */
+    float: right;
+
+
+    /* right: 0; */
+
+}
+
+
+
+/* middle banner */
+
+
+.middle-banner {
+    background-color: rgb(66, 66, 139);
+    margin: 100px 0;
+    /* height: 200px; */
+    text-align: center;
+    /* line-height: 200px; */
+
+}
+
+
+.middle-banner-text h2 {
+    font-size: 60px;
+    padding: 60px 0;
+}
+
+
+
+/* gallery */
+
+.section-gallery {
+    margin: 100px 5vw;
+    background-color: pink;
+    /* position: relative; */
+    /* overflow: hidden; */
+    height: 50vh;
+}
+
+.section-gallery-headder p {
+
+    font-size: 30px;
+}
+
+.section-gallery-gallery {
+    position: relative;
+    overflow: hidden;
+    height: 50vh;
+}
+
+.section-gallery-gallery img {
+    /* width: 100%; */
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.section-gallery-gallery p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 40px;
+    color: white;
+}
+
+.section-gallery-gallery .dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-gallery-gallery .dots span {
+    display: inline-block;
+    background-color: white;
+    opacity: 0.7;
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.section-gallery-gallery .dots .active {
+    opacity: 1;
+}
