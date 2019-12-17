@@ -213,6 +213,76 @@ section.pizzeria {
 
 
 
+/* menu */
+
+.section-menu {
+    margin: 100px 5vw;
+    /* position: relative; */
+    /* background-color: blue; */
+}
+
+.section-menu-headder {
+    background-color: pink;
+    /* position: relative; */
+}
+
+.section-menu-headder p {
+    margin: 20px;
+    font-size: 40px;
+    background-color: red;
+    display: inline;
+
+}
+
+.section-menu-headder button {
+    /* position: absolute; */
+    margin: 20px;
+    font-size: 20px;
+}
+
+
+
+.section-menu-pizza {
+    /* max-width: 1000px; */
+    /* margin: auto; */
+}
+
+
+.section-menu-pizza-headder {
+    background-color: green;
+}
+
+.menu-headder {
+    font-size: 30px;
+
+
+}
+
+.menu-size {
+    float: right;
+    font-size: 25px;
+    ;
+}
+
+
+.cointainer-menu-line {
+    margin: 15px 0;
+}
+
+
+
+
+
+.product-price {
+    float: right;
+}
+
+.product-addings {
+
+    display: block;
+    margin-top: 5px;
+}
+
 /* gallery */
 
 .section-gallery {

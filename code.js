@@ -69,4 +69,4 @@ const dotChangeSlide = () => {
 
 
 
-dotClick.addEventListener('click', dotChangeSlide)
+dotClick.addEventListener('click', dotChangeSlide);
