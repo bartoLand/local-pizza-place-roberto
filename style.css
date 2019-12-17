@@ -242,10 +242,10 @@ section.pizzeria {
 
 
 
-.section-menu-pizza {
-    /* max-width: 1000px; */
-    /* margin: auto; */
-}
+/* .section-menu-pizza {
+    max-width: 1000px;
+    margin: auto;
+} */
 
 
 .section-menu-pizza-headder {
@@ -275,13 +275,17 @@ section.pizzeria {
 
 .product-price {
     float: right;
+    width: 90px;
+    text-align: center;
 }
 
 .product-addings {
 
     display: block;
     margin-top: 5px;
+    width: 60%;
 }
+
 
 /* gallery */
 
