@@ -349,3 +349,50 @@ section.pizzeria {
 .section-gallery-gallery .dots .active {
     opacity: 1;
 }
+
+
+
+/* contact */
+
+
+.contact {
+    margin: 100px 5vw;
+    position: relative;
+    background-color: pink;
+    /* width: 100%; */
+    height: 50vw;
+}
+
+.contact-adress p {
+    font-size: 30px;
+}
+
+.contact-text {
+    background-color: orange;
+    /* display: block; */
+    position: absolute;
+    width: 30vw;
+
+
+
+    /* float: left; */
+
+}
+
+.contact-map {
+
+    /* float: right; */
+    margin: 0 20px;
+    position: absolute;
+    right: 0;
+
+
+
+
+}
+
+
+.contact-map iframe {
+    height: 50vw;
+    width: 50vw;
+}
