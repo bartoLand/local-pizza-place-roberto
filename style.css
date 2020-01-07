@@ -4,9 +4,32 @@
 }
 
 body {
-    height: 500vh;
+    /* height: 500vh; */
+    /* background-image: url(images/Subtle-Stripes.png);
+    background-size: 60px; */
 
 
+
+}
+
+
+div.background-image {
+
+    display: block;
+    position: relative;
+}
+
+div.background-image::after {
+    content: "";
+    background: url(images/Subtle-Stripes.png);
+    background-size: 60px;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }
 
 .wrapper {
@@ -93,7 +116,7 @@ div.nav-moving {
 
     background-color: rgba(0, 0, 0, 0.45);
     background-blend-mode: multiply;
-    background-image: url("images/PizzeriaRoberto_BG.jpg");
+    background-image: url("images/PizzeriaRoberto_BG-blur-cut.png");
     height: 80vh;
 
     background-repeat: no-repeat;
@@ -197,18 +220,34 @@ section.pizzeria {
 
 
 .middle-banner {
-    background-color: rgb(66, 66, 139);
-    margin: 100px 0;
+    /* background-color: rgb(66, 66, 139); */
+    /* background-image: url(images/cherry-and-roma-tomatoes.jpg); */
+
+    background: rgba(0, 0, 0, .2) url('images/cherry-and-roma-tomatoes.jpg');
+    background-blend-mode: darken;
+
+    /* margin: 100px 0; */
     /* height: 200px; */
     text-align: center;
     /* line-height: 200px; */
+    padding: 40px 0;
+
+
 
 }
 
+.middle-banner-text {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 30px;
+
+}
 
 .middle-banner-text h2 {
-    font-size: 60px;
-    padding: 60px 0;
+    font-size: 30px;
+    /* padding: 60px 0; */
 }
 
 
@@ -267,6 +306,8 @@ section.pizzeria {
 
 .cointainer-menu-line {
     margin: 15px 0;
+    border-bottom: 1px solid grey;
+    ;
 }
 
 
@@ -310,14 +351,38 @@ section.pizzeria {
 
 .section-gallery-gallery img {
     /* width: 100%; */
+    animation: image-change 3s linear infinite;
     position: absolute;
     min-width: 100%;
     min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    opacity: 0;
+    /* animation: image-change 3s linear infinite; */
 }
+
+@keyframes image-change {
+    0% {
+        opacity: 0.4
+    }
+
+    30% {
+        opacity: 1
+    }
+
+
+
+    98% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+
 
 .section-gallery-gallery p {
     position: absolute;
