@@ -81,7 +81,7 @@ div.background-image::after {
 }
 
 div.nav-moving {
-    background-color: #979797;
+    background-color: #818181fb;
     top: -80px;
     z-index: 100;
 }
@@ -525,6 +525,7 @@ section.pizzeria {
 
 .contact-title {
     font-size: 36px;
+    font-weight: bold;
 }
 
 .contact-adress {
@@ -534,8 +535,9 @@ section.pizzeria {
     margin: 66px 0;
 }
 
-.contact-adress p {
-    /* font-size: 30px; */
+.contact-headder {
+    font-weight: bold;
+
 }
 
 .contact-text {
@@ -593,6 +595,90 @@ section.pizzeria {
 .contact-image img {
     width: 65px;
     /* margin: auto; */
+
+
+}
+
+
+
+
+/* contact form */
+
+
+.contact-form {
+    background: rgba(0, 0, 0, .2) url('images/cherry-and-roma-tomatoes.jpg');
+    background-blend-mode: darken;
+
+    padding: 50px;
+}
+
+.contact-form-wrapper {
+    display: flex;
+    background-color: white;
+    padding: 60px;
+    border-radius: 20px;
+}
+
+.contact-form-text {
+    /* flex-grow: 1; */
+    width: 50%;
+}
+
+.contact-form-inputs {
+    /* flex-grow: 1; */
+    width: 50%;
+}
+
+
+.contact-form-text h3 {
+    margin-bottom: 45px;
+}
+
+.contact-form-text p {
+    font-size: 24px;
+    line-height: 41px;
+    padding-right: 84px;
+}
+
+.contact-form-input {
+    width: 100%;
+    /* height: 56px; */
+    padding: 13px;
+    font-size: 16px;
+    background-color: rgba(32, 30, 30, 0.6);
+    color: #f0f0f0;
+    border: solid 1px #c2c2c2;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form-input-message {
+    height: 300px;
+}
+
+::placeholder {
+    color: #f0f0f0;
+    opacity: 1;
+    /* font-weight: normal; */
+
+
+
+}
+
+.contact-form-inputs button {
+    position: absolute;
+
+    right: 0;
+    transform: translate(-130%, 0);
+    padding: 15px;
+    font-size: 16px;
+    background-color: rgba(32, 30, 30, 0.6);
+    color: #f0f0f0;
+    border: solid 1px #c2c2c2;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+
 
 
 }

@@ -539,20 +539,38 @@
         </div>
 
 
-        <div class="wrapper">
 
-            <section class="contact-form">
-                <p>Wyślij do nas wiadomość</p>
-                <form action="contactform.php" method="post">
-                    <input type="text" name="name" placeholder="imię i nazwisko">
-                    <input type="text" name="mail" placeholder="twój e-mail">
-                    <input type="text" name="subject" placeholder="temat">
-                    <textarea name="message" placeholder="wiadomość"></textarea>
-                    <button type="submit" name="submit">Wyślij wiadomość</button>
-                </form>
-            </section>
 
-        </div>
+        <section class="contact-form">
+
+            <div class="contact-form-wrapper">
+                <div class="contact-form-text">
+                    <h3 class="contact-title">Rezerwacja</h3>
+                    <p>Od dwudziestu lat jesteśmy częścią niezliczonych uroczystości. Pierwsze randki, urodziny, wesela,
+                        kolacje rodzinne, podkreślają jak życie, wspomnienia i jedzenie są ze sobą połączone. Skontaktuj
+                        się
+                        z nami, aby zaplanować twoje wydarzenie bądź dokonać rezerwacji.</p>
+                </div>
+
+                <div class="contact-form-inputs">
+                    <form action="contactform.php" method="post">
+                        <input class="contact-form-input-name contact-form-input" type="text" name="name"
+                            placeholder="Imię i Nazwisko" required>
+                        <input class="contact-form-input-mail contact-form-input" type="text" name="mail"
+                            placeholder="Twój adres e-mail" required>
+                        <!-- <input type="text" name="subject" placeholder="temat"> -->
+                        <textarea class="contact-form-input-message contact-form-input" name="message"
+                            placeholder="Twoja wiadomość" required></textarea>
+                        <button type="submit" name="submit">Wyślij</button>
+                    </form>
+
+                </div>
+            </div>
+
+
+        </section>
+
+
 
 
 
