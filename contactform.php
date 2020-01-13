@@ -1,5 +1,5 @@
 <?php
- iconv_set_encoding("internal_encoding", "UTF-8");
+//  iconv_set_encoding("internal_encoding", "UTF-8");
 
 if (isset($_POST['submit'])) {
 $name = $_POST['name'];
@@ -15,11 +15,11 @@ $txt = "Wiadomość wysłana przez ".$name.".\n\n".$message;
 // header("Location: index.html?mailsend");
 // }
 
-mail(utf8_decode($mailTo), utf8_decode($subject), utf8_decode($txt), utf8_decode($headers));
-header("Location: index.html?mailsend");
-}
-
-
-// mail($mailTo, $subject, $txt, $headers);
+// mail(utf8_decode($mailTo), utf8_decode($subject), utf8_decode($txt), utf8_decode($headers));
 // header("Location: index.html?mailsend");
 // }
+
+
+mail($mailTo, $subject, $txt, $headers);
+header("Location: index.html?mailsend");
+}
