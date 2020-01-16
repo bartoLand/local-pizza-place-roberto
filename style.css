@@ -22,6 +22,10 @@ body {
 
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 .font-headders {
     font-family: 'Alegreya', sans-serif;
 }
@@ -109,19 +113,26 @@ div.nav-moving {
     text-align: center;
     line-height: 60px;
     padding: 0 20px;
+
+    opacity: 0.7;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
 }
 
+/* 
 .nav-list li a {
     text-decoration: none;
-    color: white;
+
     display: block;
     opacity: 0.7;
     font-size: 21px;
     font-weight: bold;
     color: black;
-}
+} */
 
-.nav-list li:hover a {
+.nav-list li:hover {
     opacity: 1;
 }
 
@@ -173,6 +184,7 @@ div.nav-moving {
     margin-right: 20px;
     transition: 0.2s;
 
+
 }
 
 .center-information button:hover {
@@ -180,6 +192,13 @@ div.nav-moving {
     color: rgb(19, 17, 17);
     cursor: pointer;
 }
+
+/* .banner-call a {
+    text-decoration: none;
+    color: whitesmoke;
+} */
+
+
 
 .center-information .button-wrapper {
     text-align: center;
@@ -328,11 +347,11 @@ section.pizzeria {
     /* background-color: blue; */
 }
 
-.section-menu-headder {
-    /* background-color: pink; */
-    /* position: relative; */
-    /* padding-bottom: 30px; */
-}
+/* .section-menu-headder {
+    background-color: pink;
+    position: relative;
+    padding-bottom: 30px;
+} */
 
 .section-menu-headder p {
     margin-right: 25px;
@@ -682,7 +701,3 @@ section.pizzeria {
 
 
 }
-
-/* .contact-form-input-subject {
-    visibility: hidden;
-} */
