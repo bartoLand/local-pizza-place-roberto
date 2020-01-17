@@ -123,11 +123,11 @@ const galleryBtn2 = document.querySelector('.galleryBtn2');
 const contactBtn2 = document.querySelector('.contactBtn2');
 const reservationBtn2 = document.querySelector('.reservationBtn2');
 
-// const pizzeriaBtn3 = document.querySelector('.pizzeriaBtn3');
-// const menuBtn3 = document.querySelector('.menuBtn3');
-// const galleryBtn3 = document.querySelector('.galleryBtn3');
-// const contactBtn3 = document.querySelector('.contactBtn3');
-// const reservationBtn3 = document.querySelector('.reservationBtn3');
+const pizzeriaBtn3 = document.querySelector('.pizzeriaBtn3');
+const menuBtn3 = document.querySelector('.menuBtn3');
+const galleryBtn3 = document.querySelector('.galleryBtn3');
+const contactBtn3 = document.querySelector('.contactBtn3');
+const reservationBtn3 = document.querySelector('.reservationBtn3');
 
 const menuBannerBtn = document.querySelector('.banner-menu ');
 
@@ -181,11 +181,11 @@ galleryBtn2.addEventListener('click', goToGallery);
 contactBtn2.addEventListener('click', goToContact);
 reservationBtn2.addEventListener('click', goToReservation);
 
-// pizzeriaBtn3.addEventListener('click', goToPizzeria);
-// menuBtn3.addEventListener('click', goToMenu);
-// galleryBtn3.addEventListener('click', goToGallery);
-// contactBtn3.addEventListener('click', goToContact);
-// reservationBtn3.addEventListener('click', goToReservation);
+pizzeriaBtn3.addEventListener('click', goToPizzeria);
+menuBtn3.addEventListener('click', goToMenu);
+galleryBtn3.addEventListener('click', goToGallery);
+contactBtn3.addEventListener('click', goToContact);
+reservationBtn3.addEventListener('click', goToReservation);
 
 menuBannerBtn.addEventListener('click', goToMenu);
 
