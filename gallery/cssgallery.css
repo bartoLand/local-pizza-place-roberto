@@ -1,0 +1,211 @@
+/* used fonts
+
+font-family: 'Alegreya', sans-serif;
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #555452;
+
+}
+
+body {
+    /* height: 500vh; */
+    /* background-image: url(images/Subtle-Stripes.png);
+    background-size: 60px; */
+
+    font-family: 'Open Sans', sans-serif;
+    height: 200vh;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+.font-headders {
+    font-family: 'Alegreya', sans-serif;
+}
+
+
+div.background-image {
+
+    display: block;
+    position: relative;
+}
+
+div.background-image::after {
+    content: "";
+    background: url(/images/Subtle-Stripes.png);
+    background-size: 60px;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.wrapper {
+    /* max-width: 1401px; */
+    max-width: 1500px;
+    margin: auto;
+}
+
+
+
+.logo img {
+    position: absolute;
+    display: block;
+    float: left;
+    height: 60px;
+    margin: 0 10vw;
+
+}
+
+.logo-still-nav img {
+    height: 90px;
+    margin-top: -15px;
+}
+
+.bar-pannel {
+    position: absolute;
+    top: 20px;
+    padding: 10px 0;
+
+    background-color: none;
+    width: 100%;
+    transition: 0.3s top;
+    /* background-color: red; */
+
+}
+
+div.nav-moving {
+    /* background-color: #818181fb; */
+    background: rgba(0, 0, 0, .3) url('/images/cherry-and-roma-tomatoes.jpg');
+    background-blend-mode: darken;
+    top: -100px;
+    z-index: 100;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+
+
+
+.nav-list ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    margin-right: 10vw;
+}
+
+.nav-list li {
+    float: left;
+    width: auto;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    padding: 0 20px;
+
+    opacity: 0.7;
+    font-size: 16px;
+    /* font-size: 21px; */
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+/* 
+.nav-list li a {
+    text-decoration: none;
+
+    display: block;
+    opacity: 0.7;
+    font-size: 21px;
+    font-weight: bold;
+    color: black;
+} */
+
+.nav-list li:hover {
+    opacity: 1;
+}
+
+
+
+.nav-bar {
+    position: relative;
+
+
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-image: url("/images/PizzeriaRoberto_BG-blur-cut.png");
+    height: 80vh;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+
+
+.center-information {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.center-information h2 {
+    font-size: 48px;
+    color: whitesmoke;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+.center-information button {
+    border: solid whitesmoke 0.5px;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 21px;
+    /* background: none; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 190px;
+    height: 50px;
+    margin-right: 20px;
+    transition: 0.2s;
+
+
+}
+
+.center-information button:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(19, 17, 17);
+    cursor: pointer;
+}
+
+/* .banner-call a {
+    text-decoration: none;
+    color: whitesmoke;
+} */
+
+
+
+.center-information .button-wrapper {
+    text-align: center;
+    margin-top: 20px;
+
+}
