@@ -458,22 +458,28 @@ section.pizzeria {
     position: relative;
     overflow: hidden;
     height: 50vh;
+    background-color: black;
+    cursor: pointer;
+
 }
 
 .section-gallery-gallery img {
     /* width: 100%; */
-    animation: image-change 3s linear infinite;
+    /* animation: image-change 3s linear infinite; */
     position: absolute;
     min-width: 100%;
     min-height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    /* opacity: 1; */
     /* animation: image-change 3s linear infinite; */
+    filter: blur(4px);
+
+    opacity: 0.5;
 }
 
-@keyframes image-change {
+/* @keyframes image-change {
     0% {
         opacity: 0.4
     }
@@ -491,7 +497,7 @@ section.pizzeria {
     100% {
         opacity: 0
     }
-}
+} */
 
 
 
@@ -505,7 +511,7 @@ section.pizzeria {
     color: white;
 }
 
-.section-gallery-gallery .dots {
+/* .section-gallery-gallery .dots {
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -524,7 +530,7 @@ section.pizzeria {
 
 .section-gallery-gallery .dots .active {
     opacity: 1;
-}
+} */
 
 
 
