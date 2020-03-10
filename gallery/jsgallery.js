@@ -106,3 +106,13 @@ function goToMainPage() {
     location.href = "/index.html";
 
 }
+
+const hamburger = document.querySelector('.fa-bars');
+
+hamburger.addEventListener('click', function () {
+    const navMobile = document.querySelector('.nav-list2');
+
+    navMobile.classList.toggle("navOn")
+    hamburger.classList.toggle("fasOn")
+
+})

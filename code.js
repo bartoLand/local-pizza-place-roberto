@@ -151,7 +151,7 @@ const goToMenu = () => {
 }
 
 const goToGallery = () => {
-    window.scrollTo(0, offsetGallery - 130).animateScroll(target);
+    window.scrollTo(0, offsetGallery - 130);
 
 }
 
@@ -224,3 +224,27 @@ function goToGalleryLink() {
     location.href = "gallery/gallery.html";
 
 }
+
+
+
+const hamburger = document.querySelector('.fa-bars');
+// const navMobile = document.querySelector('.nav-list');
+
+
+// hamburger.addEventListener('click', function () {
+//     const navMobile = document.querySelector('.nav-list');
+//     if (navMobile.classList) {
+//         navMobile.classList.toggle("navOn")
+//         console.log("działa")
+//     }
+// })
+
+
+hamburger.addEventListener('click', function () {
+    const navMobile = document.querySelector('.nav-list2');
+
+    navMobile.classList.toggle("navOn")
+    hamburger.classList.toggle("fasOn")
+
+
+})
