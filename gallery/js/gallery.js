@@ -1,10 +1,10 @@
-let FgGallery = function(selector) {
+let FgGallery = function (selector) {
     isTrue = false;
     this.argumens = arguments;
     this.gallerySelector = document.querySelectorAll(selector);
     this.activeImage; // active (open) image
     this.bodyCover = document.createElement('div');
-    
+
     if (!document.querySelector('.body-cover')) {
         document.body.appendChild(this.bodyCover);
         this.bodyCover.classList.add('body-cover');
@@ -40,12 +40,12 @@ let FgGallery = function(selector) {
 }
 
 // Generate image items
-FgGallery.prototype.generateItems = function() {
+FgGallery.prototype.generateItems = function () {
     let This = this;
-    this.gallerySelector.forEach(function(galleryContainer, i) {
+    this.gallerySelector.forEach(function (galleryContainer, i) {
         This.originalImages[`gallery${i}`] = []
 
-        galleryContainer.querySelectorAll('img').forEach(function(imageItems, key) {
+        galleryContainer.querySelectorAll('img').forEach(function (imageItems, key) {
             This.originalImages[`gallery${i}`].push(imageItems); // Save original images
 
             // create new image elements
@@ -53,9 +53,9 @@ FgGallery.prototype.generateItems = function() {
             newImages += `<div class="gallery-items" style="background: url(${imageItems.src}) center / cover; "></div>`
             newImages = galleryContainer.appendChild(document.createRange().createContextualFragment(newImages).firstElementChild);
             imageItems.remove(); // Remove original images
-            
+
             // open image
-            newImages.onclick = function() {
+            newImages.onclick = function () {
                 This.galleryItemSequence = key;
                 This.gallerySequence = i;
                 This.next();
@@ -65,38 +65,42 @@ FgGallery.prototype.generateItems = function() {
                 This.activeImage = This.originalImages[`gallery${i}`][key].cloneNode(true);
                 This.bodyCover.appendChild(This.activeImage);
                 imagePopResize(This.activeImage);
+
+
+                hamburger.style.visibility = "hidden";
+
             }
 
             // sizing image on window resize
-            window.addEventListener('resize', function() {
-				if (This.activeImage) {
+            window.addEventListener('resize', function () {
+                if (This.activeImage) {
                     imagePopResize(This.activeImage);
                 }
-			})
-                
+            })
+
             // sizing image
             function imagePopResize(elem) {
-				if (elem.naturalWidth < window.innerWidth && elem.naturalHeight < window.innerHeight ) {
-					elem.style.width = 'auto';
-					elem.style.height = 'auto';
-				} 
-
-				if (elem.offsetWidth > window.innerWidth) {
-                    elem.style.width = '80%';
-					elem.style.height = 'auto';
-				}
-
-				if (elem.offsetHeight > window.innerHeight) {
+                if (elem.naturalWidth < window.innerWidth && elem.naturalHeight < window.innerHeight) {
                     elem.style.width = 'auto';
-					elem.style.height = '80%';
-				}
-			}
+                    elem.style.height = 'auto';
+                }
+
+                if (elem.offsetWidth > window.innerWidth) {
+                    elem.style.width = '80%';
+                    elem.style.height = 'auto';
+                }
+
+                if (elem.offsetHeight > window.innerHeight) {
+                    elem.style.width = 'auto';
+                    elem.style.height = '80%';
+                }
+            }
         })
     })
 }
 
 // next
-FgGallery.prototype.next = function() {
+FgGallery.prototype.next = function () {
     this.nextBtn.onclick = () => {
         this.galleryItemSequence++
         if (this.galleryItemSequence < this.originalImages[`gallery${this.gallerySequence}`].length) {
@@ -109,7 +113,7 @@ FgGallery.prototype.next = function() {
 }
 
 // back
-FgGallery.prototype.back = function() {
+FgGallery.prototype.back = function () {
     this.prevBtn.onclick = () => {
         this.galleryItemSequence--;
         if (this.galleryItemSequence > -1) {
@@ -122,22 +126,23 @@ FgGallery.prototype.back = function() {
 }
 
 // close image
-FgGallery.prototype.closeImage = function() {
+FgGallery.prototype.closeImage = function () {
     this.bodyCover.onclick = (e) => {
-    if (e.target.classList.contains('active') || e.target.classList.contains('close-btn') || e.target.classList.contains('close-svg')) {
+        if (e.target.classList.contains('active') || e.target.classList.contains('close-btn') || e.target.classList.contains('close-svg')) {
             this.bodyCover.classList.remove('active');
             this.bodyCover.querySelector('img').remove();
+            hamburger.style.visibility = "visible";
         }
     }
 }
 
 // applying styles
-FgGallery.prototype.styles = function() {
+FgGallery.prototype.styles = function () {
     if (typeof this.argumens[1].style) {
         for (const key in this.argumens[1].style) {
             document.querySelectorAll(`${this.argumens[0]} .gallery-items`).forEach(items => {
                 items.style[key] = this.argumens[1].style[key]
             })
-        }        
+        }
     }
 }

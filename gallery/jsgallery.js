@@ -112,7 +112,18 @@ const hamburger = document.querySelector('.fa-bars');
 hamburger.addEventListener('click', function () {
     const navMobile = document.querySelector('.nav-list2');
 
+
     navMobile.classList.toggle("navOn")
     hamburger.classList.toggle("fasOn")
+
+    const mobileButtonList = document.querySelectorAll(".nav-list2 >ul >li");
+
+    mobileButtonList.forEach(function (e) {
+        e.onclick = function () {
+            navMobile.classList.toggle("navOn")
+            hamburger.classList.toggle("fasOn")
+        }
+    })
+
 
 })

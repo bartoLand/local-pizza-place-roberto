@@ -111,11 +111,11 @@ formBtn.addEventListener('click', () => {
 // scroll to by click on buttons
 
 
-const pizzeriaBtn = document.querySelector('.pizzeriaBtn');
-const menuBtn = document.querySelector('.menuBtn');
-const galleryBtn = document.querySelector('.galleryBtn');
-const contactBtn = document.querySelector('.contactBtn');
-const reservationBtn = document.querySelector('.reservationBtn');
+// const pizzeriaBtn = document.querySelector('.pizzeriaBtn');
+// const menuBtn = document.querySelector('.menuBtn');
+// const galleryBtn = document.querySelector('.galleryBtn');
+// const contactBtn = document.querySelector('.contactBtn');
+// const reservationBtn = document.querySelector('.reservationBtn');
 
 const pizzeriaBtn2 = document.querySelector('.pizzeriaBtn2');
 const menuBtn2 = document.querySelector('.menuBtn2');
@@ -123,11 +123,11 @@ const galleryBtn2 = document.querySelector('.galleryBtn2');
 const contactBtn2 = document.querySelector('.contactBtn2');
 const reservationBtn2 = document.querySelector('.reservationBtn2');
 
-const pizzeriaBtn3 = document.querySelector('.pizzeriaBtn3');
-const menuBtn3 = document.querySelector('.menuBtn3');
-const galleryBtn3 = document.querySelector('.galleryBtn3');
-const contactBtn3 = document.querySelector('.contactBtn3');
-const reservationBtn3 = document.querySelector('.reservationBtn3');
+// const pizzeriaBtn3 = document.querySelector('.pizzeriaBtn3');
+// const menuBtn3 = document.querySelector('.menuBtn3');
+// const galleryBtn3 = document.querySelector('.galleryBtn3');
+// const contactBtn3 = document.querySelector('.contactBtn3');
+// const reservationBtn3 = document.querySelector('.reservationBtn3');
 
 const menuBannerBtn = document.querySelector('.banner-menu ');
 
@@ -169,11 +169,11 @@ const goToReservation = () => {
 
 //functions on every menu button
 
-pizzeriaBtn.addEventListener('click', goToPizzeria);
-menuBtn.addEventListener('click', goToMenu);
-galleryBtn.addEventListener('click', goToGallery);
-contactBtn.addEventListener('click', goToContact);
-reservationBtn.addEventListener('click', goToReservation);
+// pizzeriaBtn.addEventListener('click', goToPizzeria);
+// menuBtn.addEventListener('click', goToMenu);
+// galleryBtn.addEventListener('click', goToGallery);
+// contactBtn.addEventListener('click', goToContact);
+// reservationBtn.addEventListener('click', goToReservation);
 
 pizzeriaBtn2.addEventListener('click', goToPizzeria);
 menuBtn2.addEventListener('click', goToMenu);
@@ -181,11 +181,11 @@ galleryBtn2.addEventListener('click', goToGallery);
 contactBtn2.addEventListener('click', goToContact);
 reservationBtn2.addEventListener('click', goToReservation);
 
-pizzeriaBtn3.addEventListener('click', goToPizzeria);
-menuBtn3.addEventListener('click', goToMenu);
-galleryBtn3.addEventListener('click', goToGallery);
-contactBtn3.addEventListener('click', goToContact);
-reservationBtn3.addEventListener('click', goToReservation);
+// pizzeriaBtn3.addEventListener('click', goToPizzeria);
+// menuBtn3.addEventListener('click', goToMenu);
+// galleryBtn3.addEventListener('click', goToGallery);
+// contactBtn3.addEventListener('click', goToContact);
+// reservationBtn3.addEventListener('click', goToReservation);
 
 menuBannerBtn.addEventListener('click', goToMenu);
 
@@ -240,11 +240,33 @@ const hamburger = document.querySelector('.fa-bars');
 // })
 
 
+
+// const mobileButtonList = document.querySelectorAll(".nav-list2 >ul >li");
+// mobileButtonList.forEach(function (e) {
+//     e.onclick = function () {
+//         console.log("działa")
+
+//     }
+// })
+
+
+
+
 hamburger.addEventListener('click', function () {
     const navMobile = document.querySelector('.nav-list2');
 
+
     navMobile.classList.toggle("navOn")
     hamburger.classList.toggle("fasOn")
+
+    const mobileButtonList = document.querySelectorAll(".nav-list2 >ul >li");
+
+    mobileButtonList.forEach(function (e) {
+        e.onclick = function () {
+            navMobile.classList.toggle("navOn")
+            hamburger.classList.toggle("fasOn")
+        }
+    })
 
 
 })

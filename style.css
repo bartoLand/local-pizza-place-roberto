@@ -23,6 +23,15 @@ body {
     display: none;
     visibility: hidden;
     position: fixed;
+
+    display: block;
+    position: fixed;
+    z-index: 10000;
+    font-size: 7vw;
+    right: 0;
+    margin: 7vw;
+
+    transition: 0.3s right;
 }
 
 
@@ -659,14 +668,14 @@ footer section {
     }
 
     .fas {
-        display: block;
+        /* display: block;
         position: fixed;
         z-index: 10000;
         font-size: 7vw;
         right: 0;
         margin: 7vw;
 
-        transition: 0.3s right;
+        transition: 0.3s right; */
 
         visibility: visible;
 
