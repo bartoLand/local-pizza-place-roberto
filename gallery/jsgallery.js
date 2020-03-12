@@ -27,11 +27,11 @@ window.addEventListener("scroll", function () {
 // const contactBtn = document.querySelector('.contactBtn');
 // const reservationBtn = document.querySelector('.reservationBtn');
 
-// const pizzeriaBtn2 = document.querySelector('.pizzeriaBtn2');
-// const menuBtn2 = document.querySelector('.menuBtn2');
-// const galleryBtn2 = document.querySelector('.galleryBtn2');
-// const contactBtn2 = document.querySelector('.contactBtn2');
-// const reservationBtn2 = document.querySelector('.reservationBtn2');
+const pizzeriaBtn2 = document.querySelector('.pizzeriaBtn2');
+const menuBtn2 = document.querySelector('.menuBtn2');
+const galleryBtn2 = document.querySelector('.galleryBtn2');
+const contactBtn2 = document.querySelector('.contactBtn2');
+const reservationBtn2 = document.querySelector('.reservationBtn2');
 
 // const pizzeriaBtn3 = document.querySelector('.pizzeriaBtn3');
 // const menuBtn3 = document.querySelector('.menuBtn3');
@@ -105,7 +105,19 @@ window.addEventListener("scroll", function () {
 function goToMainPage() {
     location.href = "/index.html";
 
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 const hamburger = document.querySelector('.fa-bars');
 
