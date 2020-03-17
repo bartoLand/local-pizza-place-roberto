@@ -12,7 +12,6 @@ font-family: 'Open Sans', sans-serif;
     margin: 0;
     color: #555452;
     font-family: 'Open Sans', sans-serif;
-
 }
 
 a {
@@ -32,24 +31,19 @@ body {
     display: none;
     visibility: hidden;
     position: fixed;
-
     display: block;
     position: fixed;
     z-index: 10000;
     font-size: 7vw;
     right: 0;
     margin: 7vw;
-
     transition: 0.3s right;
 }
-
-
 
 .font-headders {
     font-family: 'Alegreya', sans-serif;
     font-weight: bold;
 }
-
 
 div.background-image {
     display: block;
@@ -74,15 +68,12 @@ div.background-image::after {
     margin: auto;
 }
 
-
-
 .logo img {
     position: absolute;
     display: block;
     float: left;
     height: 60px;
     margin: 0 10vw;
-
 }
 
 .logo-still-nav img {
@@ -94,7 +85,6 @@ div.background-image::after {
     position: absolute;
     top: 20px;
     padding: 10px 0;
-
     background-color: none;
     width: 100%;
     transition: 0.3s top;
@@ -111,10 +101,7 @@ div.nav-moving {
     content: "";
     display: block;
     clear: both;
-
 }
-
-
 
 .nav-list ul {
     list-style-type: none;
@@ -130,7 +117,6 @@ div.nav-moving {
     text-align: center;
     line-height: 60px;
     padding: 0 20px;
-
     opacity: 0.7;
     font-size: 19px;
     font-weight: bold;
@@ -144,18 +130,14 @@ div.nav-moving {
 
 .nav-bar {
     position: relative;
-
-
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-image: url("/images/OPT-1200-PizzeriaRoberto_BG-blur-cut-kopia.jpg");
     height: 80vh;
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-
 }
 
 .center-information {
@@ -229,7 +211,6 @@ section.pizzeria {
 
 .text-section-pizzeria .opening-hours {
     font-size: 21px;
-
 }
 
 .text-section-pizzeria .opening-hours span:nth-child(1) {
@@ -253,17 +234,13 @@ section.pizzeria {
     margin-bottom: 10px;
 }
 
-
-
 /* middle banner */
-
 
 .middle-banner {
     background: rgba(0, 0, 0, .2) url('images/OPT-cherry-and-roma-tomatoes-kopia.jpg');
     background-blend-mode: darken;
     text-align: center;
     padding: 60px 0;
-
 }
 
 .middle-banner-text {
@@ -284,7 +261,6 @@ section.pizzeria {
     font-size: 20px;
     font-weight: normal;
 }
-
 
 /* menu */
 
@@ -317,15 +293,11 @@ section.pizzeria {
     font-size: 30px;
 }
 
-
-
 .cointainer-menu-line {
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 25px;
 }
-
-
 
 .product-name {
     font-family: 'Alegreya', sans-serif;
@@ -333,9 +305,7 @@ section.pizzeria {
 }
 
 .font-normal {
-    /* font-family: 'Open Sans', sans-serif; */
     font-weight: normal;
-
 }
 
 
@@ -351,7 +321,6 @@ section.pizzeria {
 .product-addings {
     font-size: 17px;
 }
-
 
 /* gallery */
 
@@ -403,7 +372,6 @@ section.pizzeria {
 
 /* contact */
 
-
 .contact {
     margin: 100px 5vw;
 }
@@ -432,8 +400,6 @@ section.pizzeria {
     padding-right: 90px;
 }
 
-
-
 .contact-map {
     width: 100%;
     box-shadow: 0px 0px 3px 1px #979797;
@@ -442,7 +408,6 @@ section.pizzeria {
 .contact-information {
     margin-left: 15px;
 }
-
 
 .contact-map iframe {
     height: 100%;
@@ -454,13 +419,9 @@ section.pizzeria {
     align-items: center;
 }
 
-
 .contact-image img {
     width: 65px;
 }
-
-
-
 
 /* contact form */
 
@@ -480,13 +441,11 @@ section.pizzeria {
 
 .contact-form-text {
     width: 50%;
-    /* max-width: 40%; */
 }
 
 .contact-form-inputs {
     width: 50%;
 }
-
 
 .contact-form-text h3 {
     margin-bottom: 45px;
@@ -531,8 +490,6 @@ section.pizzeria {
     cursor: pointer;
     margin-bottom: 10px;
 }
-
-
 
 /* footer */
 
@@ -603,21 +560,14 @@ footer {
 }
 
 .footer-faq {
-    margin: 30px 20px;
+    margin: 30px 0;
 }
 
 footer section {
     text-align: center;
 }
 
-
-
-
-
-
 @media (max-width: 1100px) {
-
-
     .contact-text {
         padding-right: 30px;
     }
@@ -638,51 +588,25 @@ footer section {
 }
 
 @media (max-width: 950px) {
-
     .nav-bar {
         background-image: url("images/OPT-600-PizzeriaRoberto_BG-blur-cut-kopia.jpg");
         height: 80vh;
         background-attachment: scroll;
-
     }
 
     .middle-banner {
         padding: 30px 0;
-
     }
-
-    /* .middle-banner-text {
-        background-color: white;
-        width: 70%;
-        margin: auto;
-        padding: 20px;
-        border-radius: 30px;
-    } */
 
     .section-menu {
         margin: 70px 5vw;
     }
 
-
-
-    /* .cointainer-menu-line {
-        font-size: 21px;
-        line-height: 25px;
-        margin-bottom: 25px;
-    } */
-
     .section-gallery {
         margin: 50px 5vw 60px;
     }
 
-
-
-    /* section.pizzeria {
-        margin: 100px 5vw 70px;
-    } */
-
     .contact-adress {
-
         margin: 50px 0px;
         padding-right: 25px;
     }
@@ -703,10 +627,7 @@ footer section {
         align-self: center;
     }
 
-
-
     /* contact form */
-
 
     .contact-form-wrapper {
         flex-direction: column;
@@ -723,34 +644,8 @@ footer section {
 }
 
 @media (max-width: 850px) {
-
-    /* .nav-bar {
-        position: relative;
-
-
-        background-color: rgba(0, 0, 0, 0.2);
-        background-blend-mode: multiply;
-        background-image: url("images/PizzeriaRoberto_BG-blur-cut.png");
-        height: 80vh;
-
-        background-repeat: no-repeat;
-        background-size: auto 100%;
-        background-position: center;
-        background-attachment: fixed;
-    } */
-
     .fas {
-        /* display: block;
-        position: fixed;
-        z-index: 10000;
-        font-size: 7vw;
-        right: 0;
-        margin: 7vw;
-
-        transition: 0.3s right; */
-
         visibility: visible;
-
     }
 
     .fasOn {
@@ -784,7 +679,6 @@ footer section {
 
     .nav-list ul {
         padding-top: 35%;
-        /* transform: translateY(); */
         list-style-type: none;
         overflow: hidden;
         float: none;
@@ -793,7 +687,6 @@ footer section {
         background-color: grey;
         display: block;
         opacity: 0.9;
-
     }
 
     .nav-list li {
@@ -801,36 +694,22 @@ footer section {
         text-align: center;
         line-height: auto;
         padding: 0 0px;
-
         opacity: 1;
         font-size: 16px;
         font-weight: bold;
         color: black;
         cursor: pointer;
-
-
-
     }
 
-
-
-
     .logo img {
-        /* position: absolute; */
-        /* display: block; */
         float: none;
         margin: 0;
-        /* height: 110px; */
-        /* margin: vw; */
-        /* background-color: red; */
-
     }
 
     .logo-still-nav img {
         height: 100px;
         left: 47%;
         transform: translate(-50%, 12vh);
-
     }
 
     .center-information h2 {
@@ -842,9 +721,6 @@ footer section {
         margin: 15px 0;
     }
 
-
-
-
     /* the main part of the page */
 
     section.pizzeria {
@@ -854,7 +730,6 @@ footer section {
     .content-section-pizzeria {
         display: block;
     }
-
 
     .text-section-pizzeria h2 {
         font-size: 20px;
@@ -871,7 +746,6 @@ footer section {
 
     .text-section-pizzeria .opening-hours {
         font-size: 14px;
-        /* display: block; */
     }
 
 
@@ -881,13 +755,7 @@ footer section {
         margin: 50px auto 0;
     }
 
-
-
-
-
-
     /* middle banner */
-
 
     .middle-banner {
         padding: 20px 0;
@@ -906,10 +774,7 @@ footer section {
         font-size: 14px;
     }
 
-
     /* menu */
-
-
 
     .section-menu-headder p {
         font-size: 20px;
@@ -927,32 +792,20 @@ footer section {
         font-size: 18px;
     }
 
-
-
     .cointainer-menu-line {
         font-size: 18px;
         line-height: 30px;
-
     }
-
 
     .product-addings {
         font-size: 14px;
     }
 
-
     /* gallery */
-
-
 
     .section-gallery-headder p {
         font-size: 20px;
     }
-
-
-
-
-
 
     .section-gallery-gallery p {
         font-size: 18px;
@@ -961,24 +814,15 @@ footer section {
 
     /* contact */
 
-
-
     .contact-title {
         font-size: 20px;
     }
 
     .contact-text {
         font-size: 14px;
-
     }
 
-
     /* contact form */
-
-
-
-
-
 
     .contact-form-text p {
         font-size: 14px;
@@ -987,13 +831,7 @@ footer section {
 
     .contact-form-input {
         font-size: 14px;
-
-
-
     }
-
-
-
 
     /* footer */
 
@@ -1002,7 +840,6 @@ footer section {
     }
 
     .footer-main {
-
         flex-direction: column;
         text-align: center;
     }
@@ -1017,6 +854,9 @@ footer section {
         margin-left: 20px;
     }
 
+    .footer-faq {
+        transform: translateX(-15px);
+    }
 
     .footer-list li:nth-last-child(1) {
         border: none;
@@ -1031,7 +871,6 @@ footer section {
         margin-right: 10px;
     }
 
-
     .footer-facebook {
         visibility: hidden;
         display: none;
@@ -1041,7 +880,6 @@ footer section {
 @media (max-width: 690px) {
     .contact-text {
         display: block;
-        /* font-size: 18px; */
     }
 
     .contact-form {
@@ -1071,12 +909,10 @@ footer section {
     .logo-still-nav img {
         height: 90px;
         transform: translate(-50%, 11vh);
-
     }
 
     .center-information {
         top: 55%;
-
     }
 
     .text-section-pizzeria p {
@@ -1088,19 +924,15 @@ footer section {
     }
 
     .middle-banner-text {
-
         width: 90%;
         margin: auto;
         padding: 10px;
-
     }
 
     .opening-hours {
         display: block;
         width: 120%;
-
     }
-
 
     .opening-hours li {
         display: block;
@@ -1108,41 +940,29 @@ footer section {
     }
 
     .section-gallery-gallery img {
-
         width: 50%;
         height: 50%;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-
     }
-
-
-
 
     .contact-form-input {
         width: 90%;
     }
-
 }
 
 @media(max-width:325px) {
     .logo-still-nav img {
         height: 80px;
         transform: translate(-50%, 8vh);
-
     }
 }
 
 @media(orientation:landscape) and (max-width:800px) {
     .nav-bar {
         height: 130vh;
-
     }
 
     .logo-still-nav img {
         height: 90px;
         transform: translate(-50%, 8vh);
-
     }
 }
