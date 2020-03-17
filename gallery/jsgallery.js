@@ -86,11 +86,11 @@ const reservationBtn2 = document.querySelector('.reservationBtn2');
 // contactBtn.addEventListener('click', goToContact);
 // reservationBtn.addEventListener('click', goToReservation);
 
-// pizzeriaBtn2.addEventListener('click', goToPizzeria);
-// menuBtn2.addEventListener('click', goToMenu);
-// galleryBtn2.addEventListener('click', goToGallery);
-// contactBtn2.addEventListener('click', goToContact);
-// reservationBtn2.addEventListener('click', goToReservation);
+pizzeriaBtn2.addEventListener('click', goToMainPage);
+menuBtn2.addEventListener('click', goToMainPage);
+galleryBtn2.addEventListener('click', goToMainPage);
+contactBtn2.addEventListener('click', goToMainPage);
+reservationBtn2.addEventListener('click', goToMainPage);
 
 // pizzeriaBtn3.addEventListener('click', goToPizzeria);
 // menuBtn3.addEventListener('click', goToMenu);

@@ -17,6 +17,15 @@ font-family: 'Open Sans', sans-serif;
 
 }
 
+.footer-informations a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     /* height: 500vh; */
     /* background-image: url(images/Subtle-Stripes.png);
@@ -166,7 +175,7 @@ div.nav-moving {
 
     background-color: rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
-    background-image: url("/images/PizzeriaRoberto_BG-blur-cut.png");
+    background-image: url("/images/OPT-1200-PizzeriaRoberto_BG-blur-cut-kopia.jpg");
     height: 80vh;
 
     background-repeat: no-repeat;
@@ -309,11 +318,13 @@ footer {
 
 .footer-informations p.header {
     font-weight: bold;
+
 }
 
 .footer-faq a {
     text-decoration: none;
     font-weight: bold;
+    color: black;
 
 }
 
@@ -352,6 +363,13 @@ footer section {
 }
 
 @media (max-width: 950px) {
+
+    .nav-bar {
+        background-image: url("/images/OPT-600-PizzeriaRoberto_BG-blur-cut-kopia.jpg");
+        height: 80vh;
+        background-attachment: scroll;
+
+    }
 
 
     .contact-adress {
@@ -543,12 +561,14 @@ footer section {
 
     footer {
         font-size: 12px;
+        padding-bottom: 30px;
     }
 
     .footer-main {
 
         flex-direction: column;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .footer-logo {
@@ -575,14 +595,48 @@ footer section {
         margin-right: 10px;
     }
 
-
+    /* 
     .footer-facebook {
         visibility: hidden;
         display: none;
+    } */
+
+
+
+}
+
+@media (max-width: 451px) {
+    .logo-still-nav img {
+        height: 90px;
+        transform: translate(-50%, 11vh);
+
     }
 
+    .center-information {
+        top: 55%;
 
+    }
+}
 
+/* @media(orientation:landscape) and (max-width:800px) {
+    .nav-bar {
+        height: 130vh;
+
+    }
+
+    .logo-still-nav img {
+        height: 90px;
+        transform: translate(-50%, 8vh);
+
+    }
+} */
+
+@media(max-width:325px) {
+    .logo-still-nav img {
+        height: 80px;
+        transform: translate(-50%, 8vh);
+
+    }
 }
 
 @media(orientation:landscape) and (max-width:800px) {
@@ -596,3 +650,4 @@ footer section {
         transform: translate(-50%, 8vh);
 
     }
+}
