@@ -21,9 +21,9 @@ const formMail = document.querySelector('.contact-form-input-mail');
 const formBtn = document.querySelector('.formBtn');
 
 window.addEventListener("load", () => {
-    if (window.location.href == "http://demo.pizzeriaroberto.pl/index.html?mailsend") {
+    if (window.location.href == "http://pizzeriaroberto.pl/index.html?mailsend") {
         alert("Twoja wiadomość została wysłana.");
-        window.location.href = "http://demo.pizzeriaroberto.pl";
+        window.location.href = "http://pizzeriaroberto.pl";
     }
 })
 
@@ -35,7 +35,6 @@ formBtn.addEventListener('click', () => {
         event.preventDefault()
     }
 })
-
 
 
 const pizzeriaBtn2 = document.querySelector('.pizzeriaBtn2');
